@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>Qinara Links</title>
+<style>
+/* Global Styles */
+body {
+    background-color: black;
+    color: #D3B166;
+    font-family: 'Arial', sans-serif; /* Adding a more consistent font */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.image-container {
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #D3B166;
+    margin-top: 15px; /* Increased margin for better spacing */
+}
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Increased gap for better spacing */
+    margin-top: 20px;
+}
+
+.link {
+    min-width: 50% !important;
+    background-color: #D3B166 !important;
+    color: white !important;
+    font-weight: bold !important;
+    text-align: center;
+    padding: 12px;
+    border-radius: 0; /* Sharp corners (removed rounding) */
+    transition: background-color 0.3s, transform 0.2s ease-in-out; /* Added transition effect for hover */
+}
+
+/* Link Hover Effect */
+.link:hover {
+    background-color: #C49B55; /* Darker shade on hover */
+    transform: translateY(-3px); /* Subtle lift effect on hover */
+}
+
+/* Responsive Design */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .link {
+        width: 80%; /* More width on medium screens */
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .link {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+/* Contact Form Styles */
+.w3-container {
+    background-color: black;
+}
+
+.w3-input {
+    background-color: #2e2e2e; /* Darker background for inputs */
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border-radius: 0; /* Sharp corners for input fields */
+}
+
+button[type="submit"] {
+    background-color: #D3B166;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 0; /* Sharp corners for the button */
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background-color: #C49B55;
+    transform: translateY(-3px);
+}
+</style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Image and name container -->
+    <div class="image-container">
+      <img src="./Logo.png" class="w3-margin" alt="Qinara Logo" max-width="100%" height="150px" style="background-color: black;">
+      <p class="tagline">Where innovations meet impact.</p>
+      <div>
+        <p class="w3-large"><strong>Qinara pioneers hybrid classical-quantum solutions, bridging cutting-edge quantum tech with real-world impact.</strong></p>
+      </div>
+
+      <!-- Links section -->
+      <div class="links-container">
+        <a href="https://www.qinara.co.uk" class="w3-button w3-large w3-round link w3-border" target="_blank">Website</a>
+        <a href="https://www.linkedin.com/company/qinara-ltd" class="w3-button w3-large w3-round link w3-border" target="_blank">LinkedIn</a>
+        <a href="https://drive.google.com/drive/folders/18hY5G94nDOQc-muZavtklD3ghLQWAevJ?usp=sharing" class="w3-button w3-large w3-round link w3-border" target="_blank">Qinara Investor Deck</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact section -->
+  <div class="w3-container w3-center w3-padding-32 w3-padding-large" id="contact">
+    <div class="w3-content" style="max-width:500px">
+      <h4 class="w3-center"><b>Get in touch.</b></h4>
+      <form method="POST" action="https://formspree.io/f/xzzbqkqp">
+        <input type="hidden" name="_subject" value="Contact request from personal website" />
+        <div class="w3-section">
+          <label>Name</label>
+          <input class="w3-input w3-border w3-opacity-min" type="text" name="name" placeholder="Your name" required>
+        </div>
+        <div class="w3-section">
+          <label>Email</label>
+          <input class="w3-input w3-border w3-opacity-min" type="email" name="_replyto" placeholder="Your email" required>
+        </div>
+        <div class="w3-section">
+          <label>Message</label>
+          <textarea class="w3-input w3-border w3-opacity-min" name="message" placeholder="Your message" required></textarea>
+        </div>
+        <button type="submit" class="w3-button w3-large w3-round link w3-border">Send</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
